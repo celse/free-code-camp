@@ -1,0 +1,653 @@
+body, html {
+  font-family: 'Raleway', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #777;
+  font-weight: 300;
+  width: 100% !important;
+  height: 100% !important;
+}
+h2 {
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  font-size: 34px;
+  color: #333;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+}
+h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #333;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+p {
+  font-size: 16px;
+}
+p.intro {
+  margin: 12px 0 0;
+  line-height: 24px;
+}
+a {
+  color: #8eb640;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: #222;
+}
+ul, ol {
+  list-style: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+ul, ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #8eb640;
+  margin: 0;
+  margin-bottom: 40px;
+  border: 0;
+}
+.btn:active, .btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+
+/* Navigation */
+#menu {
+  transition: all 1s;
+}
+#menu.navbar-default {
+  background-color: rgba(248, 248, 248, 0);
+  border-color: rgba(231, 231, 231, 0);
+  padding: 20px 0;
+}
+#menu a.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  color: #8eb640;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#menu.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #ddd;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px 0;
+  border: 2px solid transparent;
+  letter-spacing: 0.5px;
+  margin: 10px 15px 0 15px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+  color: #8eb640;
+}
+.on {
+  background-color: #262626 !important;
+  padding: 0 !important;
+  padding: 10px 0 !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #8eb640 !important;
+  background-color: transparent;
+}
+.navbar-toggle {
+  border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #8eb640;
+  border-color: #8eb640;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+  background-color: #FFF;
+}
+/* Header Section */
+
+.intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  background: url(https://www.prlog.org/11724610-it-technology-free-news-submission.jpg) no-repeat center center;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .overlay {
+  background: rgba(0,0,0,0.4);
+}
+.intro h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  font-size: 10em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.intro span {
+  color: #a7c44c;
+  font-weight: 600;
+}
+.intro p {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+header .intro-text {
+  padding-top: 90px;
+  padding-bottom: 200px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px
+}
+
+
+header .bannier-text {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px
+}
+header .bannier-text p{
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bannier-info{
+  background-color: black;
+  margin-top: 4em;
+  border-radius: 5px;
+
+}
+
+.header-right {
+  padding: 3em;
+}
+.header-left {
+  padding: 1em;
+}
+.header-left img {
+    width: 100%;
+    margin-top: 10px;
+    padding: 35px;
+}
+.img {
+    vertical-align: middle;
+}
+ul.address {
+    margin-top: 2em;
+    margin-right: 3em;
+    margin-left: 3em;
+    border-top: 1px solid #AFAFAF;
+    padding-top: 0.1em;
+}
+ul.address li {
+    display: block;
+}
+ul.address-text li {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 1em;
+    font-weight: 400;
+}
+ul.address-text li:nth-child(1) {
+    width: 20%;
+}
+ul.address-text{
+  padding: 0px;
+}
+/* About Section */
+#about {
+  padding: 120px 0;
+}
+#about h3 {
+  font-size: 20px;
+}
+#about .about-text {
+  margin-left: 10px;
+}
+#about .about-text hr {
+  border-top: 5px solid #8eb640;
+}
+
+#about .about-img {
+
+   position: relative;
+  
+}
+#about .about-img img {
+    width: 100%;
+    
+}
+
+#about .about-img {
+
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+#about .about-img:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#about p {
+  line-height: 24px;
+  margin: 15px 0 30px;
+}
+/* Experience */
+#experience .section-title {
+  background: #444 url(http://moneyinc.com/wp-content/uploads/2016/07/HaaS.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+.resume_grid_skill,.resume_grids{
+  margin-top: 2em;
+}
+
+.resume_grids li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 0px;
+}
+.resume_grid_skill{
+  list-style: none;
+  margin: 10px 0px;
+}
+.year {
+    display: inline-block;
+    position: relative;
+    float: left;
+    padding: 30px 20px;
+    border-right: 3px solid #ddd;
+    margin-right: 20px;
+    text-align: center;
+    max-width: 150px;
+}
+.box_content {
+    padding-top: 8px;
+}
+
+.resume_grid_skill,.resume_grids h2{
+  text-align: center;
+  color: #586371;
+}
+.box_content p {
+    margin: 0;
+}
+
+/* SKills */
+
+/* ===================================================== */
+/*          PROGRESS SKILL BAR                   */
+/* ===================================================== */
+.progress-skill-bar{
+  padding:0;
+}
+.progress_skill {
+    background:#F8F8F8;
+    -webkit-border-radius: 0px;-moz-border-radius: 0px;
+    border-radius:15px;
+    box-shadow: none;
+    height:27px;
+    border:1px solid #F1F1F1;
+    margin-bottom: 15px;
+    line-height: normal;
+}
+.progress_skill .bar {
+    background: #ED687C;
+    line-height:24px;
+    font-family:"Open sans", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    text-indent: 15px;
+    text-transform:uppercase;
+    -webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;-webkit-text-shadow: none;-moz-text-shadow: none;text-shadow: none;
+    -webkit-transition: width 1s ease;-moz-transition: width 1s ease;-o-transition: width 1s ease;transition: width 1s ease;
+    border-radius: 15px;
+}
+.progress_skill:hover .bar {
+    -webkit-transition: all 0.35s ease; -moz-transition: all 0.35s ease; -o-transition: all 0.35s ease; transition: all 0.35s ease;
+    background:#DE4B64 !important;
+    color:#fff;
+    cursor: pointer;
+}
+.progress-skill-bar{
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-top: 15px;
+}
+.progress-skill-bar li{
+  overflow: hidden;
+}
+.progress-skill-bar .lable{
+  background: #555;
+  float: left;
+  color: #fff;
+  border-right: 1px #FFFFFF solid;
+
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  border-radius: 0;
+
+  font-size: 11px;
+  font-weight: bold;
+  height: 25px;
+  margin-top: 1px;
+  line-height: 24px;
+  padding: 0 0 0 4px;
+  text-align: center;
+  width: 37px;
+
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+/*  SECTION */
+.section-title h2 {
+  color: #fff;
+}
+.section-title .overlay {
+  padding: 80px 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.section-title p {
+  font-size: 22px;
+  color: rgba(255,255,255,0.8);
+}
+.section-title hr {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* About Service */
+#experience, #service {
+  padding: 0 0 60px 0;
+}
+#service .section-title {
+  background: #444 url(http://moneyinc.com/wp-content/uploads/2016/07/HaaS.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+
+#experience img, #service img {
+  width: 300px;
+  box-shadow: 15px 0 #a7c44c;
+}
+#experience h3, #service h3 {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.wthree_about_right_grids {
+  margin-top: 4em;
+}
+.wthree_about_right_grid:nth-child(2) {
+    margin-bottom: 2em;
+}
+.wthree_about_right_grid_left{
+  padding: 25px;
+}
+.wthree_about_right_grid_left i{
+  font-size: 1.9em;
+  color:#00a78e;
+  top:.9em;
+}
+
+.resume_grid_skill h4,.resume_grids h4, .wthree_about_right_grid_right h4{
+  text-transform: uppercase;
+  color: #00a78e;
+  font-weight: bold;
+}
+.wthree_about_right_grid_right p{
+  margin: 1em 0 0;
+  color: #586371;
+  line-height: 1.9em;
+  
+}
+.wthree_about_right_grid_right {
+  padding-right: 0;
+}
+.wthree_about_right_grid:hover .wthree_about_right_grid_left i{
+  color:#fff;
+}
+/* Rectangle In */
+.hvr-rectangle-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background:#00a78e;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  width: 80px;
+    height: 80px;
+    text-align: center;
+      border-radius: 50%;
+}
+.hvr-rectangle-in:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#F5F5F5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+      border-radius: 50%;
+}
+.hvr-rectangle-in:hover, 
+.hvr-rectangle-in:focus, 
+.hvr-rectangle-in:active {
+  color: white;
+}
+.hvr-rectangle-in:hover:before, 
+.hvr-rectangle-in:focus:before, 
+.hvr-rectangle-in:active:before,
+.wthree_about_right_grid:hover .hvr-rectangle-in:before,
+.agileits_services_grid:hover .hvr-rectangle-in:before{
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/* ===================================================== */
+/*          portfolio                   */
+/* ===================================================== */
+
+
+#portfolio .section-title .overlay {
+  padding: 35px 0;
+  background: #f4f4f4;
+}
+#portfolio .section-title p {
+  font-size: 22px;
+  color: #333;
+}
+#portfolio .section-title hr {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  border-top: 3px solid #8eb640; 
+}
+#portfolio .section-title h2 {
+  color: #333;
+}
+#portfolio .portfolio-item{
+  margin: 0 0 15px;
+  right: 0;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption{
+  background: rgba(233, 234, 230, 0.43);
+  position: absolute;
+  width:100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 0.9;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content{
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size:  20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color:white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 50%;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+.portfolio-modal .modal-content h3 {
+  margin: 0;
+  font-size: 3em;
+  color: white;
+}
+.portfolio-modal .modal-content p {
+ color: white; 
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr { 
+  height: 75px;
+  width: 2px;
+  margin-left: 35px;
+  background-color: #8eb640;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE */
+  -webkit-transform:rotate(45deg);
+  /* Safarie and Chrome*/
+  z-index: 1091;
+}
+
+.portfolio-modal .close-modal .lr .rl{
+  height: 75px;
+  width: 2px;
+  
+  background-color: #8eb640;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE */
+  -webkit-transform:rotate(90deg);
+  /* Safarie and Chrome*/
+  z-index: 1092;
+}
+
+/*
+.content-info {
+  background: rgba(0, 0, 0, 0.55);
+}*/
