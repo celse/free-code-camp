@@ -205,6 +205,29 @@ header .bannier-text p{
 
 }
 
+.bannier-info .header-right  .contact-social-buttons {
+  margin-top: 30px;
+}
+.bannier-info .header-right .btn-default {
+  border: 1px solid #8eb640;
+  color:#333;
+  background-color: transparent;
+}
+
+.bannier-info .header-right .btn-default:hover {
+  border: 1px solid #8eb640;
+  background-color:#fff;
+  color: black;
+  
+}
+
+.bannier-info .header-right .btn {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+}
+
+
 .header-right {
   padding: 3em;
 }
@@ -646,8 +669,48 @@ ul.address-text{
   /* Safarie and Chrome*/
   z-index: 1092;
 }
+/* ===================================================== */
+/*          portfolio                   */
+/* ===================================================== */
+#contact .section-title {
+  background: #444 url(../img/contact_us.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+#contact .btn-default {
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
+  background-color: transparent;
+}
 
-/*
-.content-info {
-  background: rgba(0, 0, 0, 0.55);
-}*/
+#contact .btn-default:hover {
+  border: 1px solid #42DCA3;
+  color: black;
+  background-color: #42DCA3;;
+}
+
+#contact .btn {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+}
+#contact .sub_content {
+    margin-bottom: 30px;
+}
+#contact_maps {
+    max-height: 380px;
+    height: 360px;
+}
+/* ===================================================== */
+/*          Footer                   */
+/* ===================================================== */
+footer .sub_content_footer {
+    margin-top: 30px;
+}
+.sub_content_footer ul li{
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+.sub_content_footer ul li a{
+  color: #333;
+}
