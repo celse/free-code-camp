@@ -38,7 +38,7 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #8eb640;
+  color: #38E2F5;
 }
 a:hover, a:focus {
   text-decoration: none;
@@ -76,7 +76,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #8eb640;
+  background: #38E2F5;
   margin: 0;
   margin-bottom: 40px;
   border: 0;
@@ -92,7 +92,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   outline-offset: none;
 }
 
-/* Navigation */
+
+/* ===================================================== */
+/*          Navigation                 */
+/* ===================================================== */
 #menu {
   transition: all 1s;
 }
@@ -103,50 +106,58 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu a.navbar-brand {
   font-family: 'Dancing Script', cursive;
-  font-size: 36px;
-  color: #8eb640;
+  font-size: 4em;
+  color: #38E2F5;
   font-weight: 700;
   letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
   color: #ddd;
-  font-weight: 500;
   font-size: 15px;
+  font-weight: bold;
   padding: 5px 0;
   border: 2px solid transparent;
   letter-spacing: 0.5px;
-  margin: 10px 15px 0 15px;
+  margin: 10px 15px 10px 15px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-  color: #8eb640;
+  color: #38E2F5;
+  border-bottom: 2px solid #fff;
 }
 .on {
   background-color: #262626 !important;
   padding: 0 !important;
   padding: 10px 0 !important;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #8eb640 !important;
+#menu.navbar-default .navbar-nav > .active > a,
+#menu.navbar-default .navbar-nav > .active > a:hover, 
+#menu.navbar-default .navbar-nav > .active > a:focus {
+  color: #38E2F5 !important;
   background-color: transparent;
+  border-bottom: 2px solid #38E2F5;
 }
 .navbar-toggle {
   border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #8eb640;
-  border-color: #8eb640;
+  background-color: #38E2F5;
+  border-color: #38E2F5;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
   background-color: #FFF;
 }
-/* Header Section */
 
+
+/* ===================================================== */
+/*          Header                 */
+/* ===================================================== */
 .intro {
   display: table;
   width: 100%;
   padding: 0;
-  background: url(https://www.prlog.org/11724610-it-technology-free-news-submission.jpg) no-repeat center center;
+  background: url(http://seynetwork.eu/wp/wp-content/uploads/2016/11/tools-for-content-marketers-header-image.jpg) no-repeat center center;
+  /*background: url(../img/celse.jpg) no-repeat center center;*/
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -154,84 +165,53 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0,0,0,0.4);
-}
-.intro h1 {
-  font-family: 'Dancing Script', cursive;
-  color: #fff;
-  font-size: 10em;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.intro span {
-  color: #a7c44c;
-  font-weight: 600;
-}
-.intro p {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 300;
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-header .intro-text {
-  padding-top: 90px;
-  padding-bottom: 200px;
-  text-align: center;
-  margin-right: 20px;
-  margin-left: 20px
+  background: rgba(0,0,0,0.2);
 }
 
 
 header .bannier-text {
-  padding-top: 90px;
-  padding-bottom: 40px;
-  margin-right: 20px;
-  margin-left: 20px
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  
 }
 header .bannier-text p{
-  text-align: center;
   color: #fff;
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 300;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  
 }
-.bannier-info{
-  background-color: black;
-  margin-top: 4em;
-  border-radius: 5px;
-
-}
-
-.bannier-info .header-right  .contact-social-buttons {
+.bannier-text .contact-social-buttons {
   margin-top: 30px;
 }
-.bannier-info .header-right .btn-default {
-  border: 1px solid #8eb640;
-  color:#333;
+.intro .overlay .bannier-text .btn-default {
+  border: 1px solid #38E2F5;
+  color:#38E2F5;
   background-color: transparent;
 }
-
-.bannier-info .header-right .btn-default:hover {
-  border: 1px solid #8eb640;
-  background-color:#fff;
+.intro .overlay .bannier-text .btn-default:hover {
+  border: 1px solid #38E2F5;
+  background-color:#38E2F5;
   color: black;
   
 }
-
-.bannier-info .header-right .btn {
+.bannier-text .btn {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   letter-spacing: 2px;
 }
 
+.bannier-info{
+  background-color: rgba(23, 20, 20, 0.70);
+  margin-top: 8em;
+  border-radius: 5px;
+  margin-bottom: 4em;
+}
 
-.header-right {
+
+.bannier-info .header-right {
   padding: 3em;
 }
-.header-left {
+.bannier-info .header-left {
   padding: 1em;
 }
 .header-left img {
@@ -243,11 +223,11 @@ header .bannier-text p{
     vertical-align: middle;
 }
 ul.address {
-    margin-top: 2em;
-    margin-right: 3em;
-    margin-left: 3em;
+   
     border-top: 1px solid #AFAFAF;
     padding-top: 0.1em;
+    border-bottom: 1px solid #AFAFAF;
+    padding-bottom: 1em;
 }
 ul.address li {
     display: block;
@@ -265,7 +245,10 @@ ul.address-text li:nth-child(1) {
 ul.address-text{
   padding: 0px;
 }
-/* About Section */
+
+/* ===================================================== */
+/*          bout Section                   */
+/* ===================================================== */
 #about {
   padding: 120px 0;
 }
@@ -276,7 +259,7 @@ ul.address-text{
   margin-left: 10px;
 }
 #about .about-text hr {
-  border-top: 5px solid #8eb640;
+  border-top: 5px solid #38E2F5;
 }
 
 #about .about-img {
@@ -310,7 +293,12 @@ ul.address-text{
   line-height: 24px;
   margin: 15px 0 30px;
 }
-/* Experience */
+
+
+/* ===================================================== */
+/*          Experience                   */
+/* ===================================================== */
+
 #experience .section-title {
   background: #444 url(http://moneyinc.com/wp-content/uploads/2016/07/HaaS.jpg) center center no-repeat fixed;
   background-size: cover;
@@ -350,7 +338,7 @@ ul.address-text{
     margin: 0;
 }
 
-/* SKills */
+
 
 /* ===================================================== */
 /*          PROGRESS SKILL BAR                   */
@@ -434,7 +422,11 @@ ul.address-text{
   margin-bottom: 40px;
 }
 
-/* About Service */
+
+/* ===================================================== */
+/*          About Service                    */
+/* ===================================================== */
+
 #experience, #service {
   padding: 0 0 60px 0;
 }
@@ -484,7 +476,10 @@ ul.address-text{
 .wthree_about_right_grid:hover .wthree_about_right_grid_left i{
   color:#fff;
 }
-/* Rectangle In */
+
+/* ===================================================== */
+/*          Rectangle In                   */
+/* ===================================================== */
 .hvr-rectangle-in {
   display: inline-block;
   vertical-align: middle;
@@ -554,7 +549,7 @@ ul.address-text{
 #portfolio .section-title hr {
   margin: 0 auto;
   margin-bottom: 35px;
-  border-top: 3px solid #8eb640; 
+  border-top: 3px solid #38E2F5; 
 }
 #portfolio .section-title h2 {
   color: #333;
@@ -648,7 +643,7 @@ ul.address-text{
   height: 75px;
   width: 2px;
   margin-left: 35px;
-  background-color: #8eb640;
+  background-color: #38E2F5;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE */
@@ -661,7 +656,7 @@ ul.address-text{
   height: 75px;
   width: 2px;
   
-  background-color: #8eb640;
+  background-color: #38E2F5;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE */
@@ -670,7 +665,7 @@ ul.address-text{
   z-index: 1092;
 }
 /* ===================================================== */
-/*          portfolio                   */
+/*          Contact                   */
 /* ===================================================== */
 #contact .section-title {
   background: #444 url(../img/contact_us.jpg) center center no-repeat fixed;
