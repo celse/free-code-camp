@@ -94,6 +94,79 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 
 /* ===================================================== */
+/*          animated                */
+/* ===================================================== */
+svg {
+    display: block;
+    font: 2.5em 'Montserrat';
+    width: 400px;
+    height:200px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #5430BF;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #38E2F5;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #F7F705;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #F2F2ED;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FC4A1A;
+	animation-delay: -5s;
+}
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}/*
+.bannier-text b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height:2px;
+}
+.bannier-text span1 {
+ display: inline-block;
+color: #e74c3c;
+position: relative;
+white-space: nowrap;
+top: 0;
+left: 0;
+-webkit-animation: move 5s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: 1s;
+}
+
+@keyframes move {
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+*/
+/* ===================================================== */
 /*          Navigation                 */
 /* ===================================================== */
 #menu {
@@ -191,7 +264,7 @@ header .bannier-text p{
 .intro .overlay .bannier-text .btn-default:hover {
   border: 1px solid #38E2F5;
   background-color:#38E2F5;
-  color: black;
+  color: #000000;
   
 }
 .bannier-text .btn {
@@ -258,6 +331,9 @@ ul.address-text{
 #about .about-text {
   margin-left: 10px;
 }
+#about .about-text h2{
+  font-size: 2em;
+}
 #about .about-text hr {
   border-top: 5px solid #38E2F5;
 }
@@ -298,7 +374,21 @@ ul.address-text{
 /* ===================================================== */
 /*          Experience                   */
 /* ===================================================== */
-
+.section-title .overlay h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+   
+}
+.section-title .overlay h2 span{
+    font-weight: bold;
+}
+.section-title .overlay hr {
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  border-top: 3px solid #38E2F5; 
+}
 #experience .section-title {
   background: #444 url(http://moneyinc.com/wp-content/uploads/2016/07/HaaS.jpg) center center no-repeat fixed;
   background-size: cover;
@@ -411,7 +501,7 @@ ul.address-text{
 }
 .section-title .overlay {
   padding: 80px 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
 }
 .section-title p {
   font-size: 22px;
@@ -420,6 +510,7 @@ ul.address-text{
 .section-title hr {
   margin: 0 auto;
   margin-bottom: 40px;
+  
 }
 
 
@@ -455,13 +546,13 @@ ul.address-text{
 }
 .wthree_about_right_grid_left i{
   font-size: 1.9em;
-  color:#00a78e;
+  color:#38E2F5;
   top:.9em;
 }
 
 .resume_grid_skill h4,.resume_grids h4, .wthree_about_right_grid_right h4{
   text-transform: uppercase;
-  color: #00a78e;
+  color: #38E2F5;
   font-weight: bold;
 }
 .wthree_about_right_grid_right p{
@@ -490,7 +581,7 @@ ul.address-text{
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background:#00a78e;
+  background:#38E2F5;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -546,11 +637,11 @@ ul.address-text{
   font-size: 22px;
   color: #333;
 }
-#portfolio .section-title hr {
+/*#portfolio .section-title hr {
   margin: 0 auto;
   margin-bottom: 35px;
   border-top: 3px solid #38E2F5; 
-}
+}*/
 #portfolio .section-title h2 {
   color: #333;
 }
@@ -593,10 +684,13 @@ ul.address-text{
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
+  color: #38E2F5;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
+  color: #38E2F5;
+  font-weight: bold;
 }
 #portfolio * {
   z-index: 2;
@@ -664,23 +758,41 @@ ul.address-text{
   /* Safarie and Chrome*/
   z-index: 1092;
 }
+.portfolio-modal .modal-body ul li {
+    color:#fff;
+}
 /* ===================================================== */
 /*          Contact                   */
 /* ===================================================== */
+#contact {
+    border-bottom: 1px solid #f2f2f2;
+}
+/*#contact .section-title .overlay h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}*/
+#contact .section-title .overlay hr {
+    border-top: 3px solid #38E2F5;
+}
+#contact .contact-social-buttons {
+    margin-top: 10px;
+}
+ 
 #contact .section-title {
   background: #444 url(../img/contact_us.jpg) center center no-repeat fixed;
   background-size: cover;
 }
 #contact .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #38E2F5;
+  color: #38E2F5;
   background-color: transparent;
 }
 
 #contact .btn-default:hover {
-  border: 1px solid #42DCA3;
-  color: black;
-  background-color: #42DCA3;;
+  border: 1px solid #38E2F5;
+  color: #000000;
+  background-color: #38E2F5;
 }
 
 #contact .btn {
@@ -698,8 +810,12 @@ ul.address-text{
 /* ===================================================== */
 /*          Footer                   */
 /* ===================================================== */
+footer{
+    background-color:#38E2F5;
+    border-bottom: 1px solid #f2f2f2;
+}
 footer .sub_content_footer {
-    margin-top: 30px;
+    margin-top: 17px;
 }
 .sub_content_footer ul li{
   font-size: 12px;
